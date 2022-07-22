@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <title>Victoria Restaurants</title>
+</head>
+<body>
+    <!-- ==========HERO SECTION============== -->
+
+    
+
+    <div class="header-wrapper">
+        
+        <ul class="top-nav">
+            <li><i class="fa-solid fa-phone"></i>+355 123-356 02</li>
+            <li><i class="fa-solid fa-location-dot"></i>2880 Broadway, New York</li>
+            <li>
+                <div class="btn-toogle">
+                    
+                    <input onclick="darkTheme()" type="checkbox" id="switch">
+                    <label for="switch"></label>
+                </div>
+            </li>
+        </ul>
+        <div class="navigation">
+            <li><a href="#"><img src="img/logo.png" class="logo" alt=""></a></li>
+
+            <div class="nav-social">
+                
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </div>
+            
+            <div class="desktop-nav">
+                <li><a href="#">Home</a></li>
+                <li><div class="dropdown">
+                    <a href="">About<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+
+                      <div class="dropdown-row">
+                        <div class="dropdown-column">
+                          <h4>About us</h4>
+                          <a href="#">Location</a>
+                          <a href="#">Team</a>
+                          <a href="#">Founders</a>
+                        </div>
+                        <div class="dropdown-column">
+                          <h4>History</h4>
+                          <a href="#">First restaurant</a>
+                          <a href="#">Celebrities visits</a>
+                          <a href="#">Bancrot</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h4>Achievements</h4>
+                            <a href="#">International</a>
+                            <a href="#">USA</a>
+                            <a href="#">Home state</a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="">Menu<i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+
+                          <div class="dropdown-row">
+                            <div class="dropdown-column">
+                              <h4>Fast food</h4>
+                              <a href="#">Pizza</a>
+                              <a href="#">Burgers</a>
+                              <a href="#">Sweets</a>
+                            </div>
+                            <div class="dropdown-column">
+                              <h4>Sea food</h4>
+                              <a href="#">Losos</a>
+                              <a href="#">Tuna</a>
+                              <a href="#">Shrimp</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Drinks</h4>
+                                <a href="#">Wine</a>
+                                <a href="#">Beer</a>
+                                <a href="#">Soft drinks</a>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#">Career<i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+
+                          <div class="dropdown-row">
+                            <div class="dropdown-column">
+                              <h4>Get a job</h4>
+                              <a href="#">Apply</a>
+                              <a href="#">Book a visit</a>
+                              <a href="#">Talk to a agent</a>
+                            </div>
+                            <div class="dropdown-column">
+                              <h4>Submit resume</h4>
+                              <a href="#">via email</a>
+                              <a href="#">in person</a>
+                              <a href="#">on fax machine</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Docs</h4>
+                                <a href="#">CV</a>
+                                <a href="#">Diploma</a>
+                                <a href="#">Copy of ID</a>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                <li><a href="">Delivery</a></li>
+                <li >
+                    
+                    <button id="myBtn" class="button-primary">Book a table </button>
+
+                    
+                    <div id="myModal" class="modal">
+
+                    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h3>Pick a perfect date for your best experience!</h3>
+                        </div>
+                        <div class="modal-body">
+                        <div class="small-input">
+                            <label for="">adults</label>
+                            <input type="number" >
+                            
+                        </div>
+                        <div class="small-input">
+                            <label for="">children</label>
+                            <input type="number" >
+                        </div>
+                        <div>
+                            <label for="">date</label>
+                            <input type="date">
+                        </div>
+                        <div>
+                            <label for="">time</label>
+                            <input type="time">
+                        </div>
+                        <div>
+                            <label for="">book VIP table</label>
+                            <input type="checkbox">
+                        </div>
+                        <button class="button-primary"><a href="#">Book table</a></button>
+                        </div>
+                        <div class="modal-footer">
+                        <p>*once you book the table we will call you to confirm</p>
+                        </div>
+                    </div>
+
+                    </div>
+                </li>
+            </div>
+
+            
+            <div class="topnav">
+                
+                <a href="#" class="active"></a>
+                <div id="mobile-menu">
+                
+                  <a href="#">Home</a>
+                  <a href="#">About us</a>
+                  <a href="#">Menu</a>
+                  <a href="#">Career</a>
+                  <a href="#">Delivery</a>
+                </div>
+                
+                <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+                            
+        </div>
+        
+
+        <div class="top-main ">
+
+            <div class="top-info">
+                <h1>Victoria restaurant</h1>
+                <h3>Try the best food of
+                    the week.</h3>
+                    <p>We cook the best food in the entire city, with excellent customer service, 
+                        the best meals and at the best price, visit us.</p>
+                <button class="button-primary"><a href="#">Order now</a></button>
+                <button class="button-secondary"><a href="#">See menu</a></button>
+                
+            </div>
+
+            <div class="top-img">
+                
+                <div class="slider">
+                    
+                    <div class="slide">
+                    <img src="img/slider1.jpg" alt="" />
+                    </div>
+                
+                    
+                    <div class="slide">
+                    <img src="img/slider2.jpg" alt="" />
+                    </div>
+                
+                    
+                    <div class="slide">
+                    <img src="img/slider3.jpg" alt="" />
+                    </div>
+                
+                    
+                    <div class="slide">
+                    <img src="img/slider4.jpg" alt="" />
+                    </div>
+                
+                    
+                    <button class="btn-slider btn-next"> <i class="fa-solid fa-angles-right"></i> </button>
+                    <button class="btn-slider btn-prev"> <i class="fa-solid fa-angles-left"></i> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
