@@ -926,3 +926,117 @@ border-radius: 5px;
   }
 }
 
+
+/* <!-- ==========TESTIMONAILS SECTIONS============== --> */
+
+.testimonial-info{
+  display: flex;
+  img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+}
+
+.testimonials{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+.testimonial p{
+  margin-left: 10px;
+  font-size: 14px;
+  width: 80%;
+  color: gray;
+}
+
+.testimonial i{
+  font-size: 20px;
+  color:goldenrod;
+  margin-right: 10px;
+}
+
+
+
+@media screen and (min-width:900px){
+  .testimonials{
+    display: flex;
+    justify-content: space-between;
+ 
+  }
+
+}
+
+@media screen and (min-width:1200px){
+  .testimonial p{
+    font-size: 16px;
+   
+  }
+
+}
+
+
+/* <!-- ==========BANNER SECTION============== --> */
+
+
+.banner-wrapper img{
+  width: 100%;
+  padding:0 !important;
+
+}
+
+.banner-img{
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.banner-text{
+  font-size: 18px;
+  color:white;
+  position:absolute;
+  z-index: 11;
+  right: 50px;
+  top: 100px;
+}
+
+
+/* <!-- ==========MOBILE APP SECTION============== --> */
+.mobile-app-wrapper{
+  margin-top: 100px;
+}
+.mobile-app{
+  display: block;
+}
+
+.phones{
+  display: flex;
+  img{
+    max-width: 600px;
+    max-height: 500px;
+    width: 80%;
+    height: 100%;
+  }
+}
+
+
+.mobile1{
+  width: 70px;
+  height: 30px;
+}
+
+
+
+@media screen and (min-width:900px){
+  .mobile-app{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+}
