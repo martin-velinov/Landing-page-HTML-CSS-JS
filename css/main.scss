@@ -953,7 +953,7 @@ border-radius: 5px;
 
 .testimonial i{
   font-size: 20px;
-  color:goldenrod;
+  color:$primaryColor;
   margin-right: 10px;
 }
 
@@ -1040,3 +1040,152 @@ border-radius: 5px;
   }
 
 }
+
+
+
+/* <!-- ==========CONTACT SECTION ============== --> */
+
+.contact-img{
+  display: none;
+}
+
+
+.contact-wrapper{
+  margin-top: 50px;
+}
+.contact-form input{
+  padding:5px 10px;
+  border: none;
+  background-color: #d9d8d8;
+  border-radius: 5px;
+}
+
+.contact-form textarea{
+  width:300px; 
+  height:100px;
+}
+
+.mapouter{ 
+  display: none;
+}
+
+@media screen and (min-width:900px){
+  .contact-wrapper{
+    padding: 0px 200px;
+  }
+
+  .mapouter{
+    display: flex;
+    
+  }
+
+  iframe{
+    width: 30vw;
+    height: 400px;
+  }
+
+  .contact-flex{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+}
+
+
+/* =========FOOTER================= */
+
+.footer-wrapper{
+  margin-top: 50px;
+}
+.footer-social{
+  display: flex;
+  justify-content: space-around;
+  i{
+    color: $primaryColor;
+  }
+}
+
+.footer-a p{
+  font-size: 13px;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.footer-col>ul{
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.ending{
+  text-align:center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.copy img{
+  width: 60px;
+  height: 40px;
+}
+
+@media screen and (min-width:900px){
+  
+  .ending{
+    padding: 50px;
+    
+  }
+  .copy{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .links{
+    display: flex;
+    justify-content:space-around;
+  }
+}
+
+@media screen and (min-width:1000px){
+  .page-footer{
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+
+/* ----back to top button----- */
+
+#back-top {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  background-color: $primaryColor;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 60px;
+  width: 60px;
+  &:hover {
+    background-color: $secondaryColor;
+  }
+}
+
